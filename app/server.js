@@ -2,13 +2,11 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const port = process.env.PORT || 8080;
-const carFiles = fs.readdirSync('./public/Car-Info');
-const carList = [];
 
 const server = http.createServer((req, res) => {
     let filePath = path.join(
         __dirname,
-        "public",
+        ".",
         req.url === "/" ? "hp.html" : req.url
     );
 
@@ -38,15 +36,6 @@ const server = http.createServer((req, res) => {
     const readStream = fs.createReadStream(filePath);
     readStream.pipe(res);
 });
-
-for (const FILE of carFiles) {
-    const newCar = require(`./public/Car-Info/${FILE}`);
-    carList.push(newCar);
-}
-
-function findCar(carName){
-    carList.find(carName);
-}
 
 server.listen(port, (err) => {
     if (err) {
