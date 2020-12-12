@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     let filePath = path.join(
         __dirname,
         ".",
-        req.url === "/" ? "hp.html" : req.url
+        req.url === "/" ? "HomePage.html" : req.url
     );
 
     let extName = path.extname(filePath);
