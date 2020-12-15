@@ -35,7 +35,7 @@ body {
   margin-right: 20px;
   cursor: pointer;
   transition-duration: 0.4s;
-  font-family: bmwfont;
+  font-family: bmwfont, sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px #000000;
   float: left;
@@ -65,7 +65,7 @@ body {
   margin-right: 100px;
   float: right;
   transition-duration: 0.4s;
-  font-family: bmwfont;
+  font-family: bmwfont, sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px #000000;
 
@@ -152,7 +152,7 @@ p {
   color: #c9c9c9;
   font-size: 24px;
   cursor: pointer;
-  font-family: bmwfont;
+  font-family: bmwfont, sans-serif;
   font-weight: normal;
   text-shadow: 1px 1px black;
   padding-top: 160px;
@@ -256,4 +256,3 @@ h2 {
   background: url('../images/e31iconsmall.jpg') no-repeat;
   margin-left: 625px;
 }
-
