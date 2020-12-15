@@ -74,6 +74,27 @@ body {
   color: white;
 }
 
+.search-box{
+  position: absolute; right: 10px;
+  background: #c9c9c9;
+  border-radius: 25px;
+  padding: 5px;
+  float: right;
+  margin-right: 50px;
+}
+
+.search-btn{
+  width: 10px;
+}
+
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  width: 250px;
+}
+
 #navbar ul {
   list-style-type: none;
   margin: 0px;
@@ -95,8 +116,7 @@ body {
 
 div {
 }
-/*  background: rgb(50,143,162);
-  background: linear-gradient(90deg, rgba(50,143,162,1) 0%, rgba(0,16,68,1) 30%, rgba(0,16,68,1) 70%, rgba(50,143,162,1) 100%);*/
+
 
 h1 {
   text-align: center;
@@ -117,7 +137,7 @@ p {
 }
 
 .carList {
-  height: 2000px;
+  height: 2100px;
   margin-top: 611px;
   background: rgb(63,64,63);
   background: linear-gradient(90deg, rgba(63,64,63,1) 0%, rgba(9,9,8,1) 30%, rgba(9,9,8,1) 70%, rgba(63,64,63,1) 100%);
@@ -126,16 +146,15 @@ p {
 .carIcon{
   width: 250px;
   height: 192px;
-  margin-left: 180px;
   border-radius: 5px;
   border: 1px solid black;
   outline: none;
-  color: black;
+  color: #c9c9c9;
   font-size: 24px;
   cursor: pointer;
   font-family: bmwfont;
   font-weight: normal;
-  text-shadow: 1px 1px grey;
+  text-shadow: 1px 1px black;
   padding-top: 160px;
   box-shadow: 5px 5px #000103;
   transition-duration: 0.4s;
@@ -169,14 +188,17 @@ h2 {
 
 .e30 {
   background: url('../images/e30iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
 .e21 {
   background: url('../images/e21iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
 .e36{
   background: url('../images/e36iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
 .series5 {
@@ -185,26 +207,53 @@ h2 {
 
 .e34 {
   background: url('../images/e34iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
 .e28 {
   background: url('../images/e28iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
 .e39{
   background: url('../images/e39iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
 
-.container6 {
-  height: 200px;
+.series6 {
+  position: relative; top: 300px;
+}
+
+.e24{
+  background: url('../images/e24iconsmall.jpg') no-repeat;
+  margin-left: 625px;
+}
+
+.series7 {
   position: relative; top: 400px;
 }
 
-.container7 {
-  height: 200px;
-  position: relative; top: 550px;
+.e23 {
+  background: url('../images/e23iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
-.container8 {
-  height: 200px;
-  position: relative; top: 700px;
+
+.e32 {
+  background: url('../images/e32iconsmall.jpg') no-repeat;
+  margin-left: 180px;
 }
+
+.e38 {
+  background: url('../images/e38iconsmall.jpg') no-repeat;
+  margin-left: 180px;
+}
+
+.series8 {
+  position: relative; top: 500px;
+}
+
+.e31 {
+  background: url('../images/e31iconsmall.jpg') no-repeat;
+  margin-left: 625px;
+}
+
