@@ -120,8 +120,8 @@ body {
   text-align: center;
   color: #c9c9c9;
   margin: auto;
-  height: 650px;
-  width: 1000px;
+  height: 600px;
+  width: 900px;
   border-radius: 5px;
   position: relative; top: 50px;
   box-shadow: 10px 10px #000103;
@@ -131,9 +131,10 @@ body {
 
 h1 {
   text-align: center;
-  text-transform: uppercase;
+  font-family: bmwfont, sans-serif;
   color: #c9c9c9;
   text-shadow: 1px 1px #000000;
+  background-color:  rgb(6,61,32);
 }
 
 p {
@@ -145,3 +146,4 @@ p {
   text-shadow: 1px 1px #000000;
   margin: 0px 50px 0px 50px;
 }
+
