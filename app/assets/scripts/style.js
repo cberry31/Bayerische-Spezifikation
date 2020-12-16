@@ -1,4 +1,5 @@
 function setBGimage(){
     const carName=localStorage.getItem("key");
-    const str=`url('../images/${carName}Page.jpg)`
+    const imgStr=`url('../images/${carName}Page.jpg)`;
+    document.body.style.backgroundImage=imgStr;
 }
