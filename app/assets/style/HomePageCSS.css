@@ -1,3 +1,16 @@
+/* Images used on the site found here:
+https://www.carpixel.net/galleries/b/30/bmw.html
+https://bimmertips.com/bmw-e21-oem-paint-color-options/
+https://bringatrailer.com/listing/1985-bmw-735i-4/
+https://driving.ca/porsche/auto-news/news/8-reasonably-priced-alternatives-to-a-classic-porsche-911
+https://drive-my.com/en/blogs/entry/bmw-e28-s50-engined.html
+https://routehunters.co/index.php/2020/05/24/the-bmw-e30-8-reasons-why-its-a-cult-classic-today/
+https://www.bmwblog.com/2017/06/29/iconic-e31-bmw-850csi-goes-drive-famous-transfagarasan-road/
+https://www.bmw-sg.com/bmw-models/bmw-e32-750il-photoshoot/2017/02/07/
+https://bringatrailer.com/listing/1991-bmw-m5-87/
+https://www.bmwblog.com/2017/08/15/photoshoot-iconic-bmw-e36-m3-gt/
+https://www.bmwusanews.com/image-gallery.do?method=view&imageGalleryId=343
+*/
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -75,6 +88,7 @@ body {
 }
 
 .search-box{
+  outline: none;
   position: absolute; right: 10px;
   background: #c9c9c9;
   border-radius: 25px;
@@ -89,11 +103,12 @@ body {
 
 .search-txt{
   border:none;
-  background: none;
+  background: #c9c9c9;
   outline: none;
   float: left;
   width: 250px;
 }
+
 
 #navbar ul {
   list-style-type: none;
