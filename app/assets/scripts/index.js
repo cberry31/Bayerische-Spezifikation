@@ -71,12 +71,12 @@ function printEngineType(car) {
 
 function printEngineHP(car) {
     if (car.engine) {
-        return car.hp;
+        return car.engine.hp;
     }
 }
 
 function printEngineDis(car) {
     if (car.engine) {
-        return car.displacement;
+        return car.engine.displacement;
     }
 }
