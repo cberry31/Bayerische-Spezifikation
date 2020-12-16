@@ -116,4 +116,35 @@ body {
 div {
 }
 
+table, th, td {
+  border: 1px solid black;
+}
 
+table {
+  margin-left: 500px;
+  position: relative; top: 100px;
+  width: 1000px;
+  height: 500px;
+  border-collapse: collapse;
+  background-color: #063d20
+}
+
+th {
+  width: 250px;
+  background-color: #063d20;
+  color: #c9c9c9;
+}
+
+td {
+  color: white;
+  text-align: center;
+}
+
+tr:hover {background-color: grey;}
+
+.table {
+  height: 1000px;
+  margin-top: 611px;
+  background: rgb(63,64,63);
+  background: linear-gradient(90deg, rgba(63,64,63,1) 0%, rgba(9,9,8,1) 30%, rgba(9,9,8,1) 70%, rgba(63,64,63,1) 100%);
+}

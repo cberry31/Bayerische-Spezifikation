@@ -6,6 +6,7 @@
   <script src="./assets/scripts/Car.js"></script>
   <script src="./assets/scripts/setCars.js"></script>
   <script src="./assets/scripts/index.js"></script>
+  <script src="./assets/scripts/style.js"></script>
   <link rel="stylesheet" href="./assets/style/CarPageTemplateCSS.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,14 +25,62 @@
 </ul></div>
 
 <body>
+  <div class="table">
+    <table>
+      <tr>
+        <th>Model Name</th>
+        <td id="carName"></td>
+      </tr>
+      <tr>
+        <th>Year</th>
+        <td id="carYear"></td>
+      </tr>
+      <tr>
+        <th>Exterior Color</th>
+        <td id="carExtrColor"></td>
+      </tr>
+      <tr>
+        <th>Interior Color</th>
+        <td id="carInColor"></td>
+      </tr>
+      <tr>
+        <th>Body Style</th>
+        <td id="carBS"></td>
+      </tr>
+      <tr>
+        <th>Average MPG</th>
+        <td id="carAVGmpg"></td>
+      </tr>
+      <tr>
+        <th>Transmission</th>
+        <td id="carTransmission"></td>
+      </tr>
+      <tr>
+        <th>Wheel Base</th>
+        <td id="carWB"></td>
+      </tr>
+      <tr>
+        <th>Engine Type</th>
+        <td id="carEngType"></td>
+      </tr>
+      <tr>
+        <th>Engine HorsePower</th>
+        <td id="carEngHP"></td>
+      </tr>
+      <tr>
+        <th>Engine Displacement</th>
+        <td id="carEngDis"></td>
+      </tr>
+    </table>
+  </div>
+
   <div>
     <p id="Print"></p>
   </div>
 
 <script>
-  var x = localStorage.getItem("key")
-  document.getElementById("Print").innerHTML = x;
-  document.body.style.backgroundImage = "url('./assets/images/e21Page.jpg')";
+  setText()
+  setBGimage()
 </script>
 
 
