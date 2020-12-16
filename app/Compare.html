@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>BMW Spezifications</title>
@@ -7,132 +8,135 @@
   <script src="./assets/scripts/setCars.js"></script>
   <script src="./assets/scripts/index.js"></script>
   <script src="./assets/scripts/style.js"></script>
-  <link rel="stylesheet" href="./assets/style/CompareCSS.css"/>
+  <link rel="stylesheet" href="./assets/style/CompareCSS.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosarivo">
   <link rel="shortcut icon" href="#" />
 
 </head>
-<div id="navbar" class="solid"><ul>
-  <a href="HomePage.html"><button class="logo1"></button></a>
-  <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
-  <a href="Compare.html"><button class="button">Compare</button></a>
-  <a href="CarList.html"><button class="button">Car List</button></a>
-  <div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
-  </div>
-</ul></div>
+<div id="navbar" class="solid">
+  <ul>
+    <a href="HomePage.html"><button class="logo1"></button></a>
+    <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
+    <a href="Compare.html"><button class="button">Compare</button></a>
+    <a href="CarList.html"><button class="button">Car List</button></a>
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Search for cars" onkeypress="searchCar(this)">
+    </div>
+  </ul>
+</div>
 
 <body>
 
-<script>
-  function StoreVariable (car){
-    localStorage.setItem("key", car);
-  }
-</script>
+  <script>
+    function StoreVariable(car) {
+      localStorage.setItem("key", car);
+    }
+  </script>
 
-<div>
-  <h1>Compare Cars Using the Dropdown Menu Below</h1>
-</div>
-
-<div class="dropdown position1">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e21')">e21</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e23')">e23</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e24')">e24</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e28')">e28</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e30')">e30</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e31')">e31</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e32')">e32</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e34')">e34</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e36')">e36</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e38')">e38</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e39')">e39</button></a>
+  <div>
+    <h1>Compare Cars Using the Dropdown Menu Below</h1>
   </div>
-</div>
 
-<div class="dropdown position2">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e21')">e21</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e23')">e23</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e24')">e24</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e28')">e28</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e30')">e30</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e31')">e31</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e32')">e32</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e34')">e34</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e36')">e36</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e38')">e38</button></a>
-    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e39')">e39</button></a>
+  <div class="dropdown position1">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e21')">e21</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e23')">e23</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e24')">e24</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e28')">e28</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e30')">e30</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e31')">e31</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e32')">e32</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e34')">e34</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e36')">e36</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e38')">e38</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText1('e39')">e39</button></a>
+    </div>
   </div>
-</div>
+
+  <div class="dropdown position2">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e21')">e21</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e23')">e23</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e24')">e24</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e28')">e28</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e30')">e30</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e31')">e31</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e32')">e32</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e34')">e34</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e36')">e36</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e38')">e38</button></a>
+      <a href="#"><button class="buttonDrop" onclick="setCompareText2('e39')">e39</button></a>
+    </div>
+  </div>
 
 
-<body>
-<div class="table">
-  <table>
-    <tr>
-      <td id="carName1"></td>
-      <th>Model Name</th>
-      <td id="carName2"></td>
-    </tr>
-    <tr>
-      <td id="carYear1"></td>
-      <th>Year</th>
-      <td id="carYear2"></td>
-    </tr>
-    <tr>
-      <td id="carExtrColor1"></td>
-      <th>Exterior Color</th>
-      <td id="carExtrColor2"></td>
-    </tr>
-    <tr>
-      <td id="carInColor1"></td>
-      <th>Interior Color</th>
-      <td id="carInColor2"></td>
-    </tr>
-    <tr>
-      <td id="carBS1"></td>
-      <th>Body Style</th>
-      <td id="carBS2"></td>
-    </tr>
-    <tr>
-      <td id="carAVGmpg1"></td>
-      <th>Average MPG</th>
-      <td id="carAVGmpg2"></td>
-    </tr>
-    <tr>
-      <td id="carTransmission1"></td>
-      <th>Transmission</th>
-      <td id="carTransmission2"></td>
-    </tr>
-    <tr>
-      <td id="carWB1"></td>
-      <th>Wheel Base</th>
-      <td id="carWB2"></td>
-    </tr>
-    <tr>
-      <td id="carEngType1"></td>
-      <th>Engine Type</th>
-      <td id="carEngType2"></td>
-    </tr>
-    <tr>
-      <td id="carEngHP1"></td>
-      <th>Engine HorsePower</th>
-      <td id="carEngHP2"></td>
-    </tr>
-    <tr>
-      <td id="carEngDis1"></td>
-      <th>Engine Displacement</th>
-      <td id="carEngDis2"></td>
-    </tr>
-  </table>
-</div>
+  <body>
+    <div class="table">
+      <table>
+        <tr>
+          <td id="carName1"></td>
+          <th>Model Name</th>
+          <td id="carName2"></td>
+        </tr>
+        <tr>
+          <td id="carYear1"></td>
+          <th>Year</th>
+          <td id="carYear2"></td>
+        </tr>
+        <tr>
+          <td id="carExtrColor1"></td>
+          <th>Exterior Color</th>
+          <td id="carExtrColor2"></td>
+        </tr>
+        <tr>
+          <td id="carInColor1"></td>
+          <th>Interior Color</th>
+          <td id="carInColor2"></td>
+        </tr>
+        <tr>
+          <td id="carBS1"></td>
+          <th>Body Style</th>
+          <td id="carBS2"></td>
+        </tr>
+        <tr>
+          <td id="carAVGmpg1"></td>
+          <th>Average MPG</th>
+          <td id="carAVGmpg2"></td>
+        </tr>
+        <tr>
+          <td id="carTransmission1"></td>
+          <th>Transmission</th>
+          <td id="carTransmission2"></td>
+        </tr>
+        <tr>
+          <td id="carWB1"></td>
+          <th>Wheel Base</th>
+          <td id="carWB2"></td>
+        </tr>
+        <tr>
+          <td id="carEngType1"></td>
+          <th>Engine Type</th>
+          <td id="carEngType2"></td>
+        </tr>
+        <tr>
+          <td id="carEngHP1"></td>
+          <th>Engine HorsePower</th>
+          <td id="carEngHP2"></td>
+        </tr>
+        <tr>
+          <td id="carEngDis1"></td>
+          <th>Engine Displacement</th>
+          <td id="carEngDis2"></td>
+        </tr>
+      </table>
+    </div>
 
 
 
-</body>
+  </body>
+
 </html>

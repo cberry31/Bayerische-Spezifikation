@@ -84,3 +84,18 @@ function printEngineDis(car) {
 function printDesc(car) {
     return car.desc;
 }
+
+function searchCar(carName) {
+    if (event.keyCode == 13) {
+        const input = document.getElementById('search');
+        let car = findCar(input.value);
+        console.log(car)
+        if (car.length > 1 || car.length < 1) {
+            location.href = "HomePage.html";
+        }
+        else {
+            localStorage.setItem("key", car[0].name);
+            location.href = "CarPageTemplate.html";
+        }
+    }
+}

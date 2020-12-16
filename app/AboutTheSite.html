@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>BMW Spezifications</title>
   <script src="./assets/scripts/Car.js"></script>
   <script src="./assets/scripts/setCars.js"></script>
   <script src="./assets/scripts/index.js"></script>
-  <link rel="stylesheet" href="./assets/style/AboutTheSiteCSS.css"/>
+  <link rel="stylesheet" href="./assets/style/AboutTheSiteCSS.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosarivo">
@@ -14,31 +15,39 @@
 </head>
 
 <body>
-<div id="navbar" class="solid"><ul>
-  <a href="HomePage.html"><button class="logo1"></button></a>
-  <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
-  <a href="Compare.html"><button class="button">Compare</button></a>
-  <a href="CarList.html"><button class="button">Car List</button></a>
-  <div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
+  <div id="navbar" class="solid">
+    <ul>
+      <a href="HomePage.html"><button class="logo1"></button></a>
+      <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
+      <a href="Compare.html"><button class="button">Compare</button></a>
+      <a href="CarList.html"><button class="button">Car List</button></a>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Search for cars" onkeypress="searchCar(this)">
+      </div>
+    </ul>
   </div>
-</ul></div>
 
-<div>
-  <h1>About This Site</h1>
-</div>
+  <div>
+    <h1>About This Site</h1>
+  </div>
 
-<div class="aboutContainer">
-  <p>Bayerische-Spezifikation is translated to Bavarian-Specifications in german and is used as a description of this sites functions and the name of the webpage.
-    This site was made as a BMW vehicle wiki that provides information on cars from the '70s '80s and '90s.
-    There are eleven cars currently on the wiki with more to be added in the future.
-    Each car is listed with a description and all general statistics of the car including horsepower and models of the car.
-    The cars are listed in terms of their chassis numbers, for example e28 or e30 for the 5 series and 3 series in the 1980's.
-    Using the Compare tab on the top of the site will allow you to compare the specifications of two cars, side by side.
-    Using the Car List tab on the top of the site will allow you to see a generated list of all cars available on this website, by clicking a car you can view car specific information.
-    This site was designed by Colton Berry, Quinn Croes and McGuire Croes while attending WSU Vancouver.
-  </p>
-</div>
+  <div class="aboutContainer">
+    <p>Bayerische-Spezifikation is translated to Bavarian-Specifications in german and is used as a description of this
+      sites functions and the name of the webpage.
+      This site was made as a BMW vehicle wiki that provides information on cars from the '70s '80s and '90s.
+      There are eleven cars currently on the wiki with more to be added in the future.
+      Each car is listed with a description and all general statistics of the car including horsepower and models of the
+      car.
+      The cars are listed in terms of their chassis numbers, for example e28 or e30 for the 5 series and 3 series in the
+      1980's.
+      Using the Compare tab on the top of the site will allow you to compare the specifications of two cars, side by
+      side.
+      Using the Car List tab on the top of the site will allow you to see a generated list of all cars available on this
+      website, by clicking a car you can view car specific information.
+      This site was designed by Colton Berry, Quinn Croes and McGuire Croes while attending WSU Vancouver.
+    </p>
+  </div>
 
 </body>
+
 </html>

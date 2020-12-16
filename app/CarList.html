@@ -22,7 +22,7 @@
       <a href="Compare.html"><button class="button">Compare</button></a>
       <a href="CarList.html"><button class="button">Car List</button></a>
       <div class="search-box">
-        <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
+        <input type="text" id="search" placeholder="Search for cars" onkeypress="searchCar(this)">
       </div>
     </ul>
   </div>
@@ -31,11 +31,11 @@
     <h1>List of BMW's by Series and Model Year From Left to Right</h1>
   </div>
 
-<script>
-  function StoreVariable (car){
-    localStorage.setItem("key", car);
-  }
-</script>
+  <script>
+    function StoreVariable(car) {
+      localStorage.setItem("key", car);
+    }
+  </script>
 
   <div class="carList">
     <div class="containerCar series3">
