@@ -26,6 +26,12 @@
 
 <body>
 
+<script>
+  function StoreVariable (car){
+    localStorage.setItem("key", car);
+  }
+</script>
+
 <div>
   <h1>Compare Cars Using the Dropdown Menu Below</h1>
 </div>
@@ -33,97 +39,100 @@
 <div class="dropdown position1">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
-    <a href="#">e21</a>
-    <a href="#">e23</a>
-    <a href="#">e24</a>
-    <a href="#">e28</a>
-    <a href="#">e30</a>
-    <a href="#">e31</a>
-    <a href="#">e32</a>
-    <a href="#">e34</a>
-    <a href="#">e36</a>
-    <a href="#">e38</a>
-    <a href="#">e39</a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e21')">e21</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e23')">e23</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e24')">e24</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e28')">e28</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e30')">e30</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e31')">e31</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e32')">e32</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e34')">e34</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e36')">e36</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e38')">e38</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText1('e39')">e39</button></a>
   </div>
 </div>
 
 <div class="dropdown position2">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
-    <a href="#">e21</a>
-    <a href="#">e23</a>
-    <a href="#">e24</a>
-    <a href="#">e28</a>
-    <a href="#">e30</a>
-    <a href="#">e31</a>
-    <a href="#">e32</a>
-    <a href="#">e34</a>
-    <a href="#">e36</a>
-    <a href="#">e38</a>
-    <a href="#">e39</a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e21')">e21</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e23')">e23</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e24')">e24</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e28')">e28</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e30')">e30</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e31')">e31</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e32')">e32</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e34')">e34</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e36')">e36</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e38')">e38</button></a>
+    <a href="#"><button class="buttonDrop" onclick="setCompareText2('e39')">e39</button></a>
   </div>
 </div>
+
 
 <body>
 <div class="table">
   <table>
     <tr>
-      <td id="carName"></td>
+      <td id="carName1"></td>
       <th>Model Name</th>
-      <td id="carName"></td>
+      <td id="carName2"></td>
     </tr>
     <tr>
-      <td id="carYear"></td>
+      <td id="carYear1"></td>
       <th>Year</th>
-      <td id="carYear"></td>
+      <td id="carYear2"></td>
     </tr>
     <tr>
-      <td id="carExtrColor"></td>
+      <td id="carExtrColor1"></td>
       <th>Exterior Color</th>
-      <td id="carExtrColor"></td>
+      <td id="carExtrColor2"></td>
     </tr>
     <tr>
-      <td id="carInColor"></td>
+      <td id="carInColor1"></td>
       <th>Interior Color</th>
-      <td id="carInColor"></td>
+      <td id="carInColor2"></td>
     </tr>
     <tr>
-      <td id="carBS"></td>
+      <td id="carBS1"></td>
       <th>Body Style</th>
-      <td id="carBS"></td>
+      <td id="carBS2"></td>
     </tr>
     <tr>
-      <td id="carAVGmpg"></td>
+      <td id="carAVGmpg1"></td>
       <th>Average MPG</th>
-      <td id="carAVGmpg"></td>
+      <td id="carAVGmpg2"></td>
     </tr>
     <tr>
-      <td id="carTransmission"></td>
+      <td id="carTransmission1"></td>
       <th>Transmission</th>
-      <td id="carTransmission"></td>
+      <td id="carTransmission2"></td>
     </tr>
     <tr>
-      <td id="carWB"></td>
+      <td id="carWB1"></td>
       <th>Wheel Base</th>
-      <td id="carWB"></td>
+      <td id="carWB2"></td>
     </tr>
     <tr>
-      <td id="carEngType"></td>
+      <td id="carEngType1"></td>
       <th>Engine Type</th>
-      <td id="carEngType"></td>
+      <td id="carEngType2"></td>
     </tr>
     <tr>
-      <td id="carEngHP"></td>
+      <td id="carEngHP1"></td>
       <th>Engine HorsePower</th>
-      <td id="carEngHP"></td>
+      <td id="carEngHP2"></td>
     </tr>
     <tr>
-      <td id="carEngDis"></td>
+      <td id="carEngDis1"></td>
       <th>Engine Displacement</th>
-      <td id="carEngDis"></td>
+      <td id="carEngDis2"></td>
     </tr>
   </table>
 </div>
+
+
 
 </body>
 </html>
