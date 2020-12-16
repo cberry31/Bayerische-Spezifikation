@@ -14,6 +14,7 @@ function setText() {
     document.getElementById("carEngType").innerHTML = printEngineType(car).toString();
     document.getElementById("carEngHP").innerHTML = printEngineHP(car).toString();
     document.getElementById("carEngDis").innerHTML = printEngineDis(car).toString();
+    document.getElementById("carDesc").innerHTML = printDesc.toString();
 }
 
 function setBGimage() {
