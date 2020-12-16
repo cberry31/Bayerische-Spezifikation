@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>BMW Spezifications</title>
   <script src="./assets/scripts/Car.js"></script>
   <script src="./assets/scripts/setCars.js"></script>
   <script src="./assets/scripts/index.js"></script>
-  <link rel="stylesheet" href="./assets/style/CarList.css"/>
+  <link rel="stylesheet" href="./assets/style/CarList.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosarivo">
   <link rel="shortcut icon" href="#" />
 </head>
+
 <body>
-<div id="navbar" class="solid"><ul>
-  <a href="HomePage.html"><button class="logo1"></button></a>
-  <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
-  <button class="button">Compare</button>
-  <a href="CarList.html"><button class="button">Car List</button></a>
-  <div class="search-box">
-    <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
-  </div>
-</ul></div>
-
-<div>
-  <h1>List of BMW's by Series and Model Year From Left to Right</h1>
-</div>
-
-<script>
-  function StoreVariable (car){
-    localStorage.setItem("key", car);
-  }
-
-</script>
-
-<div class="carList">
-  <div class="containerCar series3">
-    <h2>3 Series</h2>
-    <a href="CarPageTemplate.html"><button onclick="StoreVariable('e21')" id="e21" value="url('../images/e21Page.jpg')" class="carIcon e21">E21</button></a>
-    <a href="CarPageTemplate.html"><button onclick="StoreVariable('e30')" id="e30" value="url('../images/e30Page.jpg')" class="carIcon e30">E30</button></a>
-    <button class="carIcon e36">E36</button>
+  <div id="navbar" class="solid">
+    <ul>
+      <a href="HomePage.html"><button class="logo1"></button></a>
+      <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
+      <button class="button">Compare</button>
+      <a href="CarList.html"><button class="button">Car List</button></a>
+      <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
+      </div>
+    </ul>
   </div>
 
-  <div class="containerCar series5">
-    <h2>5 Series</h2>
-    <button class="carIcon e28">E28</button>
-    <button class="carIcon e34">E34</button>
-    <button class="carIcon e39">E39</button>
+  <div>
+    <h1>List of BMW's by Series and Model Year From Left to Right</h1>
   </div>
 
-  <div class="containerCar series6">
-    <h2>6 Series</h2>
-    <button class="carIcon e24">E24</button>
-  </div>
+  <script>
+    function StoreVariable(car) {
+      localStorage.setItem("key", car);
+    }
 
-  <div class="containerCar series7">
-    <h2>7 Series</h2>
-    <button class="carIcon e23">E23</button>
-    <button class="carIcon e32">E32</button>
-    <button class="carIcon e38">E38</button>
-  </div>
+  </script>
 
-  <div class="containerCar series8">
-    <h2>8 Series</h2>
-    <button class="carIcon e31">E31</button>
+  <div class="carList">
+    <div class="containerCar series3">
+      <h2>3 Series</h2>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e21')" id="e21"
+          class="carIcon e21">E21</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e30')" id="e30"
+          class="carIcon e30">E30</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e36')" id="e36"
+          class="carIcon e36">E36</button></a>
+    </div>
+
+    <div class="containerCar series5">
+      <h2>5 Series</h2>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e28')" id="e28"
+          class="carIcon e28">E28</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e34')" id="e34"
+          class="carIcon e34">E34</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e39')" id="e39"
+          class="carIcon e39">E39</button></a>
+    </div>
+
+    <div class="containerCar series6">
+      <h2>6 Series</h2>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e24')" id="e24"
+          class="carIcon e24">E24</button></a>
+    </div>
+
+    <div class="containerCar series7">
+      <h2>7 Series</h2>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e23')" id="e23"
+          class="carIcon e23">E23</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e32')" id="e32"
+          class="carIcon e32">E32</button></a>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e38')" id="e38"
+          class="carIcon e38">E38</button></a>
+    </div>
+
+    <div class="containerCar series8">
+      <h2>8 Series</h2>
+      <a href="CarPageTemplate.html"><button onclick="StoreVariable('e31')" id="e31" class="carIcon e31">E31</button>
+    </div>
   </div>
-</div>
 
 </body>
+
 </html>

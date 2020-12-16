@@ -80,3 +80,7 @@ function printEngineDis(car) {
         return car.engine.displacement;
     }
 }
+
+function printDesc(car) {
+    return car.desc;
+}
