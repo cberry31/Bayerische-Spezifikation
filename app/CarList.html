@@ -27,11 +27,18 @@
   <h1>List of BMW's by Series and Model Year From Left to Right</h1>
 </div>
 
+<script>
+  function StoreVariable (car){
+    localStorage.setItem("key", car);
+  }
+
+</script>
+
 <div class="carList">
   <div class="containerCar series3">
     <h2>3 Series</h2>
-    <button class="carIcon e21">E21</button>
-    <button class="carIcon e30">E30</button>
+    <a href="CarPageTemplate.html"><button onclick="StoreVariable('e21')" id="e21" value="url('../images/e21Page.jpg')" class="carIcon e21">E21</button></a>
+    <a href="CarPageTemplate.html"><button onclick="StoreVariable('e30')" id="e30" value="url('../images/e30Page.jpg')" class="carIcon e30">E30</button>
     <button class="carIcon e36">E36</button>
   </div>
 
