@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>BMW Spezifications</title>
+  <script src="./assets/scripts/Car.js"></script>
+  <script src="./assets/scripts/setCars.js"></script>
+  <script src="./assets/scripts/index.js"></script>
+  <link rel="stylesheet" href="./assets/style/CarPageTemplateCSS.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rosarivo">
+  <link rel="shortcut icon" href="#" />
+
 </head>
+<div id="navbar" class="solid"><ul>
+  <a href="HomePage.html"><button class="logo1"></button></a>
+  <a href="AboutTheSite.html"><button class="button">About The Site</button></a>
+  <button class="button">Compare</button>
+  <a href="CarList.html"><button class="button">Car List</button></a>
+  <div class="search-box">
+    <input class="search-txt" type="text" name="" placeholder="Chassis Search (ex: e24...)">
+  </div>
+</ul></div>
+
 <body>
-$END$
+  <div>
+    <p id="Print"></p>
+  </div>
+
+<script>
+  var x = localStorage.getItem("key")
+  document.getElementById("Print").innerHTML = x;
+  document.body.style.backgroundImage = "url('./assets/images/e21Page.jpg')";
+</script>
+
+
 </body>
 </html>
